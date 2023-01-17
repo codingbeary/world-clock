@@ -23,6 +23,18 @@ function updateTime() {
       "h:mm:ss[<small>] A [</small>]"
     );
   }
+  // Warsaw
+  let warsawElement = document.querySelector("#warsaw");
+  if (warsawElement) {
+    let warsawDateElement = warsawElement.querySelector(".date");
+    let warsawTimeElement = warsawElement.querySelector(".time");
+    let warsawTime = moment().tz("Europe/Warsaw");
+
+    warsawDateElement.innerHTML = warsawTime.format("MMMM Do YYYY");
+    warsawTimeElement.innerHTML = warsawTime.format(
+      "h:mm:ss[<small>] A [</small>]"
+    );
+  }
 }
 function updateCity(event) {
   let cityTimeZone = event.target.value;
