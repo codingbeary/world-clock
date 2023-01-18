@@ -23,15 +23,15 @@ function updateTime() {
       "h:mm:ss[<small>] A [</small>]"
     );
   }
-  // Warsaw
-  let warsawElement = document.querySelector("#warsaw");
-  if (warsawElement) {
-    let warsawDateElement = warsawElement.querySelector(".date");
-    let warsawTimeElement = warsawElement.querySelector(".time");
-    let warsawTime = moment().tz("Europe/Warsaw");
+  // Maldives
+  let maldivesElement = document.querySelector("#maldives");
+  if (maldivesElement) {
+    let maldivesDateElement = maldivesElement.querySelector(".date");
+    let maldivesTimeElement = maldivesElement.querySelector(".time");
+    let maldivesTime = moment().tz("Indian/Maldives");
 
-    warsawDateElement.innerHTML = warsawTime.format("MMMM Do YYYY");
-    warsawTimeElement.innerHTML = warsawTime.format(
+    maldivesDateElement.innerHTML = maldivesTime.format("MMMM Do YYYY");
+    maldivesTimeElement.innerHTML = maldivesTime.format(
       "h:mm:ss[<small>] A [</small>]"
     );
   }
@@ -53,7 +53,9 @@ function updateCity(event) {
   <div class="time">${cityTime.format("h:mm:ss")}<small>${cityTime.format(
     "A"
   )}</small></div>
-  </div>`;
+  </div>
+  <a href="index.html">Back to all cities </a>
+  `;
 }
 
 updateTime();
