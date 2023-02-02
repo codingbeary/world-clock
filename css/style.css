@@ -1,9 +1,5 @@
 body {
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(248, 213, 214) 0%,
-    rgb(243, 242, 229) 90%
-  );
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
   background-attachment: fixed;
 }
 h1 {
@@ -14,7 +10,7 @@ h1 {
 
 h1 a {
   text-decoration: none;
-  color: #680747;
+  color: #402a23;
 }
 
 h2 {
