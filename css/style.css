@@ -1,6 +1,5 @@
 body {
-  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-  background-attachment: fixed;
+  background-color: #eeee;
 }
 h1 {
   font-family: "Bebas Neue", cursive;
